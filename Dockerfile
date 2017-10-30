@@ -9,3 +9,4 @@ RUN apt-get -y install geonode
 RUN geonode create superuser
 RUN geonode-updateip
 
+EXPOSE 80
