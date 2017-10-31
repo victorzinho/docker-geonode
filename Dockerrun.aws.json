@@ -1,0 +1,10 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "vicgonco/geonode"
+	},
+	"Ports": [{
+		"HostPort": "80",
+		"ContainerPort": "80"
+	}]
+}
