@@ -1,0 +1,17 @@
+<layer>
+  <name>lkr_ex</name>
+  <id>LayerInfoImpl--5c57bb17:15fc997a3b9:-7fd3</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <name>polygon</name>
+  </defaultStyle>
+  <resource class="featureType">
+    <name>lkr_ex</name>
+  </resource>
+  <queryable>true</queryable>
+  <opaque>false</opaque>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+</layer>

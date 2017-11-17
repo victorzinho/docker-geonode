@@ -1,0 +1,31 @@
+<dataStore>
+  <id>DataStoreInfoImpl--5c57bb17:15fc997a3b9:-7fdb</id>
+  <name>datastore</name>
+  <type>PostGIS</type>
+  <enabled>true</enabled>
+  <workspace>
+    <name>geonode</name>
+  </workspace>
+  <connectionParameters>
+    <entry key="Estimated extends">false</entry>
+    <entry key="fetch size">1000</entry>
+    <entry key="encode functions">false</entry>
+    <entry key="validate connections">true</entry>
+    <entry key="Expose primary keys">false</entry>
+    <entry key="Support on the fly geometry simplification">false</entry>
+    <entry key="create database">false</entry>
+    <entry key="preparedStatements">false</entry>
+    <entry key="database">geonode</entry>
+    <entry key="passwd">crypt1:ENL8BS3vwnrEn5g3oe66pA==</entry>
+    <entry key="port">5432</entry>
+    <entry key="min connections">1</entry>
+    <entry key="dbtype">postgis</entry>
+    <entry key="host">postgis</entry>
+    <entry key="namespace">http://www.geonode.org/</entry>
+    <entry key="Loose bbox">false</entry>
+    <entry key="max connections">10</entry>
+    <entry key="Test while idle">false</entry>
+    <entry key="user">docker</entry>
+  </connectionParameters>
+  <__default>false</__default>
+</dataStore>

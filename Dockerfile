@@ -4,6 +4,7 @@ MAINTAINER Víctor González <victor.gonzalez@geomati.co>
 
 ENV TOMCAT_VERSION 8.5.23
 ENV GEONODE_REPO_BRANCH 2.6.x
+ENV GEOSERVER_DATA_DIR /opt/gs_data_dir
 
 # Install packages with apt
 RUN apt-get update -y      \
@@ -38,9 +39,10 @@ RUN apt-get update -y      \
   && tar xzf apache-tomcat-${TOMCAT_VERSION}.tar.gz \
   && mv apache-tomcat-${TOMCAT_VERSION} /var/lib/tomcat8
 
-# Add Apache2 site and start script
+# Add Apache2 site, start script, sample geoserver data dir
 ADD geonode.conf /etc/apache2/sites-available/geonode.conf
 ADD start.sh /var/docker-entrypoint.sh
+ADD data ${GEOSERVER_DATA_DIR}
 
 # Install GeoNode
 RUN git clone https://github.com/GeoNode/geonode.git --branch ${GEONODE_REPO_BRANCH} /var/geonode
@@ -61,4 +63,6 @@ RUN pip install -e . \
   && service apache2 restart \
   && chmod +x /var/docker-entrypoint.sh
 
+
 ENTRYPOINT /var/docker-entrypoint.sh
+
