@@ -13,7 +13,6 @@ RUN apt-get update -y      \
     build-essential        \
     gdal-bin               \
     git-core               \
-    inotify-tools          \
     libapache2-mod-wsgi    \
     libgeos-dev            \
     libjpeg-dev            \
@@ -33,7 +32,6 @@ RUN apt-get update -y      \
     python-pip             \
     python-psycopg2        \
     python-urlgrabber      \
-    rsync                  \
     wget                   \
   && rm -rf /var/lib/apt/lists/* \
   && pip install --upgrade pip \
