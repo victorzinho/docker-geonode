@@ -39,10 +39,9 @@ RUN apt-get update -y      \
   && tar xzf apache-tomcat-${TOMCAT_VERSION}.tar.gz \
   && mv apache-tomcat-${TOMCAT_VERSION} /var/lib/tomcat8
 
-# Add Apache2 site, start script, sample geoserver data dir
+# Add Apache2 site and sample geoserver data dir
 ADD geonode.conf /etc/apache2/sites-available/geonode.conf
-ADD start.sh /var/docker-entrypoint.sh
-ADD data ${GEOSERVER_DATA_DIR}
+ADD geoserver ${GEOSERVER_DATA_DIR}
 
 # Install GeoNode
 RUN git clone https://github.com/GeoNode/geonode.git --branch ${GEONODE_REPO_BRANCH} /var/geonode
@@ -60,9 +59,8 @@ RUN pip install -e . \
   && a2enmod proxy_http \
   && a2dissite 000-default \
   && a2ensite geonode \
-  && service apache2 restart \
-  && chmod +x /var/docker-entrypoint.sh
+  && service apache2 restart
 
-
+ADD docker-entrypoint.sh /var/docker-entrypoint.sh
 ENTRYPOINT /var/docker-entrypoint.sh
 
