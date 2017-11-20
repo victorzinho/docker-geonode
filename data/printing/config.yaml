@@ -20,10 +20,6 @@ scales:
 # the list of allowed ips
 #===========================================================================
 hosts:
-  - !ipMatch
-    ip: 195.37.175.46
-  - !ipMatch
-    ip: 10.201.0.109
   - !localMatch
     dummy: true
   - !dnsMatch

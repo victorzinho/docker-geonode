@@ -1,20 +1,12 @@
 <global>
   <settings>
-    <id>SettingsInfoImpl--5291bee9:15452449103:-8000</id>
+    <id>SettingsInfoImpl-2edad420:155c534d13f:-8000</id>
     <contact/>
     <charset>UTF-8</charset>
     <numDecimals>8</numDecimals>
     <onlineResource>http://geoserver.org</onlineResource>
     <verbose>false</verbose>
     <verboseExceptions>false</verboseExceptions>
-    <metadata>
-      <map>
-        <entry>
-          <string>quietOnNotFound</string>
-          <boolean>false</boolean>
-        </entry>
-      </map>
-    </metadata>
     <localWorkspaceIncludesPrefix>false</localWorkspaceIncludesPrefix>
   </settings>
   <jai>
@@ -37,10 +29,9 @@
     <queueType>UNBOUNDED</queueType>
     <imageIOCacheThreshold>10240</imageIOCacheThreshold>
   </coverageAccess>
-  <updateSequence>122</updateSequence>
+  <updateSequence>63</updateSequence>
   <featureTypeCacheSize>0</featureTypeCacheSize>
   <globalServices>true</globalServices>
   <xmlPostRequestLogBufferSize>1024</xmlPostRequestLogBufferSize>
-  <xmlExternalEntitiesEnabled>false</xmlExternalEntitiesEnabled>
   <resourceErrorHandling>SKIP_MISCONFIGURED_LAYERS</resourceErrorHandling>
 </global>
