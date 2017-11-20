@@ -8,10 +8,10 @@
 		"ContainerPort": "80"
 	}],
     "Volumes": [{
-        "HostDirectory": "/var/geonode",
-        "ContainerDirectory": "/var/geonode-overrides"
+        "HostDirectory": "/efs/geonode",
+        "ContainerDirectory": "/var/geonode/geonode"
     }, {
-        "HostDirectory": "/var/geoserver",
+        "HostDirectory": "/efs/geoserver",
         "ContainerDirectory": "/opt/gs_data_dir"
     }]
 }
