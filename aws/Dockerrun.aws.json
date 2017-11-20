@@ -1,0 +1,18 @@
+{
+	"AWSEBDockerrunVersion": "1",
+	"Image": {
+		"Name": "vicgonco/geonode"
+	},
+	"Ports": [{
+		"HostPort": "80",
+		"ContainerPort": "80"
+	}],
+    "Volumes": [{
+        "HostDirectory": "/var/geonode",
+        "ContainerDirectory": "/var/geonode-overrides"
+    }, {
+        "HostDirectory": "/var/geoserver",
+        "ContainerDirectory": "/opt/gs_data_dir"
+    }]
+}
+
